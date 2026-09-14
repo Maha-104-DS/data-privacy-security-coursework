@@ -32,7 +32,7 @@ The seminar in Module 3 was presented with Muhammad Agus (Group M3.4). All noteb
 
 *References: Rivest, Adleman & Dertouzos (1978); Gentry (2009).*
 
-![Pseudonymisation vs Anonymisation](images/pseudonymisation-vs-anonymisation.jpg)
+![Pseudonymisation vs Anonymisation](pseudonymisation-vs-anonymisation.jpg)
 
 ## Module 3 — Pseudonyms & Anonymity *(presented seminar)*
 
@@ -43,11 +43,11 @@ Presented with Muhammad Agus. Covers two real-world privacy failures against the
 
 **Case Study 1 — Gravatar hashing attack** (Demir et al., 2018): Gravatar links avatars to emails via `MD5(email)`. Because email formats are predictable, an attacker can build a dictionary of likely addresses and match hashes — recovering the original email without ever breaking MD5 itself. The lesson: **the hash function was never broken; the anonymity set was just too small.**
 
-![Anonymity Set Analysis](images/anonymity-set-analysis.jpg)
+![Anonymity Set Analysis](anonymity-set-analysis.jpg)
 
 **Case Study 2 — Netflix Prize de-anonymization** (Narayanan & Shmatikov, 2008): Netflix released 100M+ "anonymised" ratings. Matching just 6–8 ratings against public IMDb reviews was enough to re-identify a subscriber — exposing viewing habits and, by extension, political and religious preferences.
 
-![Gravatar vs Netflix](images/gravatar-vs-netflix-comparison.jpg)
+![Gravatar vs Netflix](gravatar-vs-netflix-comparison.jpg)
 
 **K-anonymity** requires every record to share its quasi-identifiers with at least *k−1* others, but can still fail via homogeneity attacks, background knowledge, or the sparse-data problem (extension: l-diversity).
 
